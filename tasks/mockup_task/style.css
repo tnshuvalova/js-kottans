@@ -1,0 +1,101 @@
+nav{
+    margin: 20px;
+} 
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 50px;
+    width: 24%;
+    border: 2px solid #B8B6D6;
+    background-color: #444;
+    display: inline-block;
+    margin: 0;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+nav li:hover{
+    background-color: #D4D3E6;
+    box-shadow: inset -5px -5px 10px -5px #333,
+        10px 10px 5px 0px #33CCFF; 
+}
+ 
+nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;    
+    padding: 5px;
+}
+
+a:hover{
+    color: green;   
+    text-decoration: none;
+}
+
+.primary article img{
+    width: 200px;
+    margin: 0 20px 20px 0;
+}
+
+.secondary article img{
+    width: 200px;
+    margin: 0 20px 20px 0;
+    float: right;
+}
+
+.content .primary {
+    width: 650px;
+    padding-right: 20px;
+    float: left;
+    display: inline;
+}
+
+.content .secondary {
+    width: 224px;
+    float: right;
+    display: inline;
+    background-color: #D8D8E3;
+    margin-right: 33px; 
+}
+
+.content {
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.wrapper{
+    width: 980px;
+    border: 1px solid #bbb;
+}
+
+.content:after { 
+    content: ".";  
+    display: block;  
+    height: 0;  
+    visibility: hidden;  
+    clear: both;  
+}
+
+footer{
+    text-align: center;
+    border: 1px solid #bbb;
+    height: 40px;
+} 
