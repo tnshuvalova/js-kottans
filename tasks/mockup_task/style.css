@@ -50,25 +50,28 @@ a:hover{
     text-decoration: none;
 }
 
-.primary article img{
-    width: 200px;
-    margin: 0 20px 20px 0;
-}
-
 .secondary article img{
     width: 200px;
     margin: 0 20px 20px 0;
     float: right;
 }
 
-.content .primary {
+.content{
     width: 650px;
     padding-right: 20px;
     float: left;
     display: inline;
+    overflow: hidden;
+    margin-left: 40px;
 }
 
-.content .secondary {
+
+.content article img{
+    width: 200px;
+    margin: 0 20px 20px 0;
+}
+
+.sidebar{
     width: 224px;
     float: right;
     display: inline;
@@ -76,22 +79,9 @@ a:hover{
     margin-right: 33px; 
 }
 
-.content {
-    overflow: hidden;
-    margin-left: 40px;
-}
-
 .wrapper{
     width: 980px;
     border: 1px solid #bbb;
-}
-
-.content:after { 
-    content: ".";  
-    display: block;  
-    height: 0;  
-    visibility: hidden;  
-    clear: both;  
 }
 
 footer{

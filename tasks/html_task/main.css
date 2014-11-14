@@ -173,6 +173,27 @@ textarea[name=feedback]{
     transform: rotate(-20deg);   
 }
 
+.cs9:hover{
+    background: radial-gradient(circle at center, black, red); 
+    box-shadow:  5px 5px 30px 5px green;
+    transform: rotate(-20deg);   
+    transition: all 1s ease-in-out 1s;
+}
+
+.animated{
+    background-color: lightblue;
+    animation: an 5s infinite;
+    position: relative;
+}
+
+@keyframes an {
+    0%   {background: red; left:0px; top:0px;}
+    25%  {background: yellow; left:200px; top:0px; border-radius: 50%;}
+    50%  {background: blue; left:200px; top:200px; }
+    75%  {background: green; left:0px; top:200px;}
+    100% {background: red; left:0px; top:0px;}
+}
+
 .magic-rules{
     opacity: 0.5;
     font-family: Arial, sans-serif;
@@ -199,3 +220,6 @@ textarea[name=feedback]{
     content: "☎☎☎☎☎\A☎☎☎☎☎\A☎☎☎☎☎\A☎☎☎☎☎\A☎☎☎☎☎";
 }
 
+.overfloated{
+    text-overflow: ellipsis;
+}

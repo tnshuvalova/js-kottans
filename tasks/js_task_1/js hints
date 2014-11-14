@@ -1,0 +1,47 @@
+     JSHint, JSLint
+    'use strict';
+    Infinity, Nan, isFinite, isNan
+    function(a,b,undefined)
+    search, replace, test (Regex)
+    multicatch: conditional on instance of Exception
+    именованную ф. можно вызвать по имени только внутри. снаружи только по имени пер.
+    arguments (a la Array, inhereted from Object), callee.
+    анонимная рекурсивная функция через callee
+    this меняется в зависимости от контекста. Просто вызов ф. - window. Или инстанс
+    В прототипе - общее, в this индивидуально
+    apply, call с контекстом по выбору
+    Function.prototype.bind
+    конструктор без new explicit return obj
+    safe constructor:  внутри проверить typeof и вызвать new Foo(), если тип не Foo...
+    свойство _proto_ ссылается на prototype
+    Object.create(person,options={age:{value:13}}) - var a = Object.create(b), readable, writable - properties
+    void 0
+    F.prototype = prototype; object = new F(); object.__proto__ = prototype; F = new Function()
+
+
+function Shape
+function Rect(){Shape.call(this)}
+Rect.prototype = Object.create(Shape.prototype)
+Rect.prorotype.constructor = Rect
+
+patterns.
+1.(function(window, undefined){
+    //logic
+}(window)
+
+2.({blabla-object}).init()
+
+3. carrying a()()
+
+4. concurrency, event loop
+
+5. event queue, event loop, thread
+
+6. var timer = setTimeout(function(){},100)
+   clearTimeout(timer)
+
+7. setTimeout in setTimeout is better than setInterval
+
+8. setImmediate - asynchronus
+
+9. <a href="javascript: "
