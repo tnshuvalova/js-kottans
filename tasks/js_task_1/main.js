@@ -22,5 +22,11 @@ function deepCopy(o) {
   return tmp;
 };
 
-var b = deepCopy(a);
-console.log(b);
+function deepCopy2(o){
+  return JSON.parse(JSON.stringify(o));
+}
+
+var b = deepCopy2(a);
+a.p=2;
+console.log(b.p);
+
