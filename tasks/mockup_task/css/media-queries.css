@@ -18,6 +18,10 @@
  h1{
     display: none;
  }
+ nav li{
+  width: 25%;
+  display: table-cell;
+ }
  #searchform {
     position: absolute;
     top: 5px;
