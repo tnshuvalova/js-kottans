@@ -1,0 +1,90 @@
+@media screen and (max-width: 980px) {
+   #wrapper {
+      width: 95%;
+   }
+   #content {
+      width: 84%;
+      padding: 3% 4%;
+   }
+   #sidebar {
+      width: 15%;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   #header {
+    height: auto;
+ }
+ h1{
+    display: none;
+ }
+ #searchform {
+    position: absolute;
+    top: 5px;
+    right: 60px;
+ }
+ #main-nav {
+    position: static;
+ }
+ #site-logo {
+    margin: 15px 100px 5px 0;
+    position: static;
+ }
+ #site-description {
+    margin: 0 0 15px;
+    position: static;
+ }
+ #content {
+    width: auto;
+    float: none;
+    margin: 20px 0;
+ }
+ #sidebar {
+    width: 100%;
+    float: none;
+    margin: 0;
+ }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+       -webkit-text-size-adjust: none;
+    }
+    #content{
+      background-color: red;
+      margin-top:40%;
+    }
+    #main-nav a {
+      font-size: 90%;
+      padding: 10px 8px;
+    }
+    #wrapper{
+      border: 0;
+    }
+    nav{
+      margin-top: 15%;
+    }
+    nav li{
+      display: block;
+      width: 300px;
+    }
+    img {
+       max-width: 100%;
+       height: auto;
+       width: auto\9; /* ie8 */
+    }
+    h1{
+       display: none;
+    }
+    .label-search{
+      display: inline;
+    }
+    #search{
+       display: inline;
+       margin-top: 30%;
+    }
+    #searchform{
+      width: 200px;
+    }
+}
+
