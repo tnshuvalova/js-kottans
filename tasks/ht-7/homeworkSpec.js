@@ -13,79 +13,7 @@ console.log( $red ) //показать все DOM элементы с класс
  
 $red.width('100px') //изменяет текущую высоту до 100px всех DOM элементов с классом .red
 */
-$(document).ready(function(){
 
-function my_$(selector){  
-  var res = this;
-  res = document.querySelectorAll(selector);
-  res.width = function(value){
-    if(!value){
-      var w_res = [];
-      for (var i = res.length - 1; i >= 0; i--) {
-        w_res.push(window.getComputedStyle(res[i]).width); 
-      }
-      return w_res;
-    }
-    else{
-      for (var k = res.length - 1; k >= 0; k--) {
-        res[k].style.width = value;
-      }
-      return res;
-    }
-  };
-  res.height = function(value){
-    if(!value){
-      var h_res = [];
-      for (var i = res.length - 1; i >= 0; i--) {
-        h_res.push(window.getComputedStyle(res[i]).height); 
-      }
-      return h_res;
-    }
-    else{
-      for (var k = res.length - 1; k >= 0; k--) {
-        res[k].style.height = value;
-      }
-      return res;
-    }
-  };
-  res.css = function(style){
-    function setStyle(){
-      for(var prop in new_style){
-        for (var i = res.length - 1; i >= 0; i--) {
-          res[i].style[prop] = new_style[prop]; 
-        }
-      }
-    }
-    var new_style = {},
-      timeout;
-    if(typeof style === 'object'){
-      new_style = style;
-      timeout = arguments[1];
-    }
-    else{
-      new_style[arguments[0]] = arguments[1];
-      timeout = arguments[2];
-    }
-
-    if(timeout){
-      setTimeout(setStyle, timeout);
-    }
-    else{
-      setStyle();
-    }
-    
-    return res;
-  };
-  return res;
-}
-
-// for(var i = 0, l = style.length; i < l; i++){
-//     var prop = style[i];
-//     var val = style.getPropertyValue(prop);
-//     returns[prop] = val;
-// }
-
-// alert(document.querySelectorAll('div')[0].style.width);
 describe('Task#1 - my_$', function () {
 
   beforeEach(function () {
@@ -187,6 +115,4 @@ describe('Task#2 - my_$css', function() {
       expect(my_$('#my-id').width()).toEqual(['200px']);
     });
   });
-});
-
 });
